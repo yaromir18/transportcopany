@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Транспортная Компания</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <h1 class="logo">Транспортная Компания</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">О компании</a></li>
+                    <li><a href="./services.html">Услуги</a></li>
+                    <li><a href="./contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="contact">
+        <div class="container hidden" style="width: 50%;">
+            <h2>Связаться с нами</h2>
+            <form id="contactForm">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Электронная почта:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+        
+        <!-- Модальное окно -->
+        <div id="successModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <p>Ваши данные успешно отправлены!</p>
+            </div>
+        </div>
+
+            <h3>Наши контактные данные</h3>
+            <p><strong>Телефон:</strong> +7 (123) 456-78-90</p>
+            <p><strong>Email:</strong> info@transportcompany.example</p>
+            <p><strong>Адрес:</strong>1-й Вязовский пр., 4, стр. 19</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Транспортная Компания. Все права защищены.</p>
+            <div class="map-container">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab9493637860a441e64ba3bbbc04ddc63fe0c51b138925cd23ec251e20b80e0ea&amp;source=constructor" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="scroll.js"></script>
+    <script src="button.js"></script>
+</body>
+</html>

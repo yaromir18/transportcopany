@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Транспортная Компания</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <h1 class="logo">Транспортная Компания</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">О компании</a></li>
+                    <li><a href="./services.html">Услуги</a></li>
+                    <li><a href="./contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="hidden">О нашей компании</h2>
+            <p class="hidden">Наша транспортная компания предоставляет высококачественные услуги по грузоперевозкам и логистике. С 2005 года мы успешно работаем на рынке, обслуживая более 1000 клиентов. Наша цель - обеспечить своевременную и надежную доставку вашего груза.</p>
+            <p class="hidden">Мы гордимся тем, что используем современное оборудование и профессиональную команду, чтобы гарантировать безопасность и контроль на каждом этапе перевозки.</p>
+            <img class="gallery-image hidden" src="./img/транспортная компания.jpg" alt="Транспортная Компания" >
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="service-list">
+                <div class="service-item hidden">
+                    <h3>Грузоперевозки</h3>
+                    <p>Мы предоставляем услуги по перевозке различных типов грузов. Наши водители имеют большой опыт и знают, как обеспечить безопасность вашего груза.</p>
+                </div>
+                <div class="service-item hidden">
+                    <h3>Логистика</h3>
+                    <p>Наша команда сможет спланировать и оптимизировать ваши грузовые перевозки, чтобы снизить затраты и повысить эффективность.</p>
+                </div>
+                <div class="service-item hidden">
+                    <h3>Перевозка животных</h3>
+                    <p>Мы также предлагаем услуги по безопасной перевозке домашних животных и других живых существ, обеспечивая комфорт для них на протяжении всей поездки.</p>
+                </div>
+                <div class="service-item hidden">
+                    <h3>Складские услуги</h3>
+                    <p>Обеспечиваем надежные складские услуги для хранения ваших товаров до момента доставки.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h2>Галерея</h2> 
+            <div class="carousel" id="carousel">
+                <img src="./img/животные.jpg" alt="Грузовик 1" class="carousel-img active">
+                <img src="./img/логистика.jpg" alt="Грузовик 2" class="carousel-img">
+                <img src="./img/перевозки.webp" alt="Логистика" class="carousel-img">
+                <img src="./img/транспортная компания.jpg" alt="Склад" class="carousel-img">
+            </div>
+            <button class="carousel-button carousel-button-left" id="prevBtn">❮</button>
+            <button class="carousel-button carousel-button-right" id="nextBtn">❯</button>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <div class="container hidden">
+            <h2>Связаться с нами</h2>
+            <form id="contactForm">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Электронная почта:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+        
+        <!-- Модальное окно -->
+        <div id="successModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <p>Ваши данные успешно отправлены!</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Транспортная Компания. Все права защищены.</p>
+            <div class="map-container">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab9493637860a441e64ba3bbbc04ddc63fe0c51b138925cd23ec251e20b80e0ea&amp;source=constructor" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="scroll.js"></script>
+    <script src="button.js"></script>
+</body>
+</html>
